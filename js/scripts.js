@@ -42,13 +42,15 @@ $(document).ready(function() {
                     $(".address").text(address);
                     $(".user").text(name);
                     $(".text").show();
-                  } else if ((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
+                    $("ul").hide();
+                  } else if ((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!" || fifthAnswer === "No, I just want to learn something my friends would be jelous of!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
                     $(".fR").text("JavaScript");
                     $(".reason").text("For Front End Developlemt JavaScript is the most popular programming language. In almost every case you need to learn JavaScript to be able to make a website");
                     $(".oR").text("CSS, or HTML");
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
+                    $("ul").hide();
                   } else if (thirdAnswer === "I want to learn something new!" && fourthAnswer === "Easy to Learn" || fourthAnswer === "Not Hard but easier") {
                     $(".fR").text("Ruby on Rails");
                     $(".reason").text("It is a newer programming language that is gaining popularity");
@@ -56,6 +58,7 @@ $(document).ready(function() {
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
+                    $("ul").hide();
                   } else if (fourthAnswer === "Hard to Learn" || fourthAnswer === "Very Hard to Learn") {
                     $(".fR").text("JavaScript, HTML, CSS");
                     $(".reason").text("Altogther they are not easy to Learn");
@@ -63,6 +66,7 @@ $(document).ready(function() {
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
+                    $("ul").hide();
                   }
 
                 } else if(firstAnswer === "Back-End Development") {
@@ -73,13 +77,15 @@ $(document).ready(function() {
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
-                  } else if((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
+                    $("ul").hide();
+                  } else if((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!" || fifthAnswer === "No, I just want to learn something my friends would be jelous of!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
                     $(".fR").text("Java");
                     $(".reason").text("In terms of getting a career Java is one of the highest paid careers");
                     $(".oR").text("C#, Swift");
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
+                    $("ul").hide();
                   } else if(thirdAnswer === "I want to learn something new!") {
                     $(".fR").text("Swift");
                     $(".reason").text("Swift is a relatively new Programming language. It was created by Apple in 2014, and it constantly being updated.");
@@ -87,10 +93,12 @@ $(document).ready(function() {
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
+                    $("ul").hide();
                   }
                 }
               } else {
                 $(".noInput").show();
+                $("ul").hide();
               }
               event.preventDefault();
             });

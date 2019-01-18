@@ -33,10 +33,21 @@ body {
 /* Code below is for styling done to page */
 
 
+@keyframes color {
+  0% {color: red;}
+  20% {color: orange;}
+  40% {color: yellow;}
+  60% {color: green;}
+  80% {color: Blue;}
+  100% {color: White;}
+}
+
 .title {
   color: white;
   margin-top: 5%;
   padding-bottom: 5%;
+  animation-name: color;
+  animation-duration: 10s;
 }
 div {
   text-align: center;
@@ -44,11 +55,16 @@ div {
 }
 
 form {
+  animation-name: color;
+  animation-duration: 10s;
   color: white;
   text-align: center;
   display: block;
   margin: 0 auto;
   width: 50%;
+}
+button {
+  margin-top: 4%;
 }
 
 .link {
@@ -57,6 +73,8 @@ form {
 
 
 .text {
+  animation-name: color;
+  animation-duration: 10s;
   color: white;
   display: none;
   margin-top: 5%;
@@ -64,6 +82,8 @@ form {
 }
 
 .noInput {
+  animation-name: color;
+  animation-duration: 10s;
   color: white;
   display: none;
   margin-top: 5%;
@@ -71,7 +91,10 @@ form {
 }
 
 ul {
+  animation-name: color;
+  animation-duration: 10s;
   padding-top: 6%;
+  padding-left: 0;
   list-style-type: none;
   color: lightgrey;
   font-size: 20px;
