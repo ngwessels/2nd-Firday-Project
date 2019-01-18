@@ -36,17 +36,17 @@ $(document).ready(function() {
               if (name, address) {
                 if (firstAnswer === "Front-End Development") {
                   if (secondAnswer === "No Experience" || secondAnswer === "A Little Experience") {
-                    $(".fR").text("HTML");
-                    $(".reason").text("It is a easier language to learn");
-                    $(".oR").text("CSS, or JavaScript");
+                    $(".fR").text("CSS/Design");
+                    $(".reason").text("This track might be a little easier");
+                    $(".oR").text("Java/Android or Ruby/Rails");
                     $(".address").text(address);
                     $(".user").text(name);
                     $(".text").show();
                     $("ul").hide();
                   } else if ((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!" || fifthAnswer === "No, I just want to learn something my friends would be jelous of!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
-                    $(".fR").text("JavaScript");
-                    $(".reason").text("For Front End Developlemt JavaScript is the most popular programming language. In almost every case you need to learn JavaScript to be able to make a website");
-                    $(".oR").text("CSS, or HTML");
+                    $(".fR").text("Java/Android");
+                    $(".reason").text("There are many different career paths you can choose with learning the java programming language");
+                    $(".oR").text("CSS/Design or Ruby/Rails");
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
@@ -54,13 +54,13 @@ $(document).ready(function() {
                   } else if (thirdAnswer === "I want to learn something new!" && fourthAnswer === "Easy to Learn" || fourthAnswer === "Not Hard but easier") {
                     $(".fR").text("Ruby on Rails");
                     $(".reason").text("It is a newer programming language that is gaining popularity");
-                    $(".oR").text("CSS, HTML, JavaScript");
+                    $(".oR").text("C#/.NET or Java/Android");
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
                     $("ul").hide();
                   } else if (fourthAnswer === "Hard to Learn" || fourthAnswer === "Very Hard to Learn") {
-                    $(".fR").text("JavaScript, HTML, CSS");
+                    $(".fR").text("C#/.NET and PHP/Drupal");
                     $(".reason").text("Altogther they are not easy to Learn");
                     $(".oR").text("Java");
                     $(".user").text(name);
