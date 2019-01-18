@@ -1,4 +1,40 @@
 
+
+
+body {
+  background-image: url("../imgs/code.jpg")
+}
+
+
+/* And code below is for styling done to page */
+
+
+.title {
+  color: white;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+div {
+  text-align: center;
+  font-size: 25px;
+}
+
+form {
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.link {
+  text-decoration-line: underline;
+}
+
+
+
+/* Each form separated to give individual control to the scripts.js */
+
 #form1 {
   display: none;
 }
@@ -20,10 +56,18 @@
 }
 
 
+
+
 .text {
+  color: white;
   display: none;
+  margin-top: 5%;
+  font-size: 25px;
 }
 
 .noInput {
+  color: white;
   display: none;
+  margin-top: 5%;
+  font-size: 25px;
 }
