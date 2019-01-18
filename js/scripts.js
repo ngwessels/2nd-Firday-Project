@@ -42,15 +42,40 @@ $(document).ready(function() {
                     $(".oR").text("CSS, or JavaScript");
                     $(".user").text(name);
                     $(".text").show();
-                  } else if ((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!") && thirdAnswer == "I want to learn a programming language that is mainstream or conventional!") {
+                  } else if ((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
                     $(".fR").text("JavaScript");
                     $(".reason").text("For Front End Developlemt JavaScript is the most popular programming language. In almost every case you need to learn JavaScript to be able to make a website");
                     $(".oR").text("CSS, or HTML");
                     $(".user").text(name);
                     $(".text").show();
+                  } else if (thirdAnswer === "I want to learn something new!") {
+                    $(".fR").text("Ruby on Rails");
+                    $(".reason").text("It is a newer programming language that is gaining popularity");
+                    $(".oR").text("CSS, HTML, JavaScript");
+                    $(".user").text(name);
+                    $(".text").show();
                   }
 
                 } else if(firstAnswer === "Back-End Development") {
+                  if(secondAnswer === "No Experience" || secondAnswer === "A Little Experience") {
+                    $(".fR").text("Python");
+                    $(".reason").text("Its an easier to Learn Language and is still widely used today");
+                    $(".oR").text("C++, and Java");
+                    $(".user").text(name);
+                    $(".text").show();
+                  } else if((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
+                    $(".fR").text("Java");
+                    $(".reason").text("In terms of getting a career Java is one of the highest paid careers");
+                    $(".oR").text("C#, Swift");
+                    $(".user").text(name);
+                    $(".text").show();
+                  } else if(thirdAnswer === "I want to learn something new!") {
+                    $(".fR").text("Swift");
+                    $(".reason").text("Swift is a relatively new Programming language. It was created by Apple in 2014, and it constantly being updated.");
+                    $(".oR").text("Ruby on Rails, C#");
+                    $(".user").text(name);
+                    $(".text").show();
+                  }
 
                 }
 
