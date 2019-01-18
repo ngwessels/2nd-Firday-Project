@@ -30,8 +30,7 @@ $(document).ready(function() {
               $("#button5").hide();
               $("form#form5").hide();
 
-              //Conditional statements.  It will take every possible input and give user a different response
-              //In the class selection .oR stands for otherRecommendation. .fR stands for firstRecommendation.
+              //.oR stands for otherRecommendation. .fR stands for firstRecommendation.
 
               if (name, address) {
                 if (firstAnswer === "Front-End Development") {
