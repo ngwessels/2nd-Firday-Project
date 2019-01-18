@@ -35,11 +35,16 @@ body {
 
 @keyframes color {
   0% {color: red;}
-  20% {color: orange;}
-  40% {color: yellow;}
-  60% {color: green;}
-  80% {color: Blue;}
-  100% {color: White;}
+  10% {color: orange;}
+  20% {color: yellow;}
+  30% {color: green;}
+  40% {color: Blue;}
+  50% {color: White;}
+  60% {color: Blue;}
+  70% {color: green;}
+  80% {color: yellow;}
+  90% {color: orange;}
+  100% {color: red;}
 }
 
 .title {
@@ -48,6 +53,8 @@ body {
   padding-bottom: 5%;
   animation-name: color;
   animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
 }
 div {
   text-align: center;
@@ -61,7 +68,8 @@ form {
   text-align: center;
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
+  animation-iteration-count: infinite;
 }
 button {
   margin-top: 4%;
@@ -84,6 +92,7 @@ button {
 .noInput {
   animation-name: color;
   animation-duration: 10s;
+  animation-iteration-count: infinite;
   color: white;
   display: none;
   margin-top: 5%;
@@ -93,6 +102,7 @@ button {
 ul {
   animation-name: color;
   animation-duration: 10s;
+  animation-iteration-count: infinite;
   padding-top: 6%;
   padding-left: 0;
   list-style-type: none;
