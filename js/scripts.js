@@ -1,7 +1,7 @@
-debugger;
 $(document).ready(function() {
   $("form#name").submit(function() {
     var name = $("input#userName").val();
+    var address = $("input#address").val();
     $("#button").hide();
     $("form#name").hide();
     $("form#form1").show();
@@ -34,12 +34,16 @@ $(document).ready(function() {
               $("form#form5").hide();
 
 
-              if (name) {
+              //Conditional statements.  It will take every possible input and give user a different response
+              //In the class selection .oR stands for otherRecommendation. .fR stands for firstRecommendation.
+
+              if (name, address) {
                 if (firstAnswer === "Front-End Development") {
                   if (secondAnswer === "No Experience" || secondAnswer === "A Little Experience") {
                     $(".fR").text("HTML");
                     $(".reason").text("It is a easier language to learn");
                     $(".oR").text("CSS, or JavaScript");
+                    $(".address").text(address);
                     $(".user").text(name);
                     $(".text").show();
                   } else if ((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
@@ -47,12 +51,14 @@ $(document).ready(function() {
                     $(".reason").text("For Front End Developlemt JavaScript is the most popular programming language. In almost every case you need to learn JavaScript to be able to make a website");
                     $(".oR").text("CSS, or HTML");
                     $(".user").text(name);
+                    $(".address").text(address);
                     $(".text").show();
                   } else if (thirdAnswer === "I want to learn something new!") {
                     $(".fR").text("Ruby on Rails");
                     $(".reason").text("It is a newer programming language that is gaining popularity");
                     $(".oR").text("CSS, HTML, JavaScript");
                     $(".user").text(name);
+                    $(".address").text(address);
                     $(".text").show();
                   }
 
@@ -62,18 +68,21 @@ $(document).ready(function() {
                     $(".reason").text("Its an easier to Learn Language and is still widely used today");
                     $(".oR").text("C++, and Java");
                     $(".user").text(name);
+                    $(".address").text(address);
                     $(".text").show();
                   } else if((fifthAnswer === "Yes!" || fifthAnswer === "I dont know yet!") && thirdAnswer === "I want to learn a programming language that is mainstream or conventional!") {
                     $(".fR").text("Java");
                     $(".reason").text("In terms of getting a career Java is one of the highest paid careers");
                     $(".oR").text("C#, Swift");
                     $(".user").text(name);
+                    $(".address").text(address);
                     $(".text").show();
                   } else if(thirdAnswer === "I want to learn something new!") {
                     $(".fR").text("Swift");
                     $(".reason").text("Swift is a relatively new Programming language. It was created by Apple in 2014, and it constantly being updated.");
                     $(".oR").text("Ruby on Rails, C#");
                     $(".user").text(name);
+                    $(".address").text(address);
                     $(".text").show();
                   }
 
@@ -82,33 +91,16 @@ $(document).ready(function() {
               } else {
                 $(".noInput").show();
               }
-
-
               event.preventDefault();
             });
             event.preventDefault();
           });
           event.preventDefault();
-
         });
         event.preventDefault();
       });
-
       event.preventDefault();
     });
-
-
     event.preventDefault();
   });
-
-
-
-
-
-
-
-
-
-
-
 });
