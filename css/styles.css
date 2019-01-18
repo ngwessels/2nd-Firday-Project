@@ -1,12 +1,36 @@
 
 
+/* Each form separated to give individual control to the scripts.js */
+
+#form1 {
+  display: none;
+}
+
+#form2 {
+  display: none;
+}
+
+#form3 {
+  display: none;
+}
+
+#form4 {
+  display: none;
+}
+
+#form5 {
+  display: none;
+}
+
+
+/* Background Image code below */
 
 body {
   background-image: url("../imgs/code.jpg")
 }
 
 
-/* And code below is for styling done to page */
+/* Code below is for styling done to page */
 
 
 .title {
@@ -32,32 +56,6 @@ form {
 }
 
 
-
-/* Each form separated to give individual control to the scripts.js */
-
-#form1 {
-  display: none;
-}
-
-#form2 {
-  display: none;
-}
-
-#form3 {
-  display: none;
-}
-
-#form4 {
-  display: none;
-}
-
-#form5 {
-  display: none;
-}
-
-
-
-
 .text {
   color: white;
   display: none;
@@ -70,4 +68,11 @@ form {
   display: none;
   margin-top: 5%;
   font-size: 25px;
+}
+
+ul {
+  padding-top: 6%;
+  list-style-type: none;
+  color: lightgrey;
+  font-size: 20px;
 }

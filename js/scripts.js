@@ -10,7 +10,6 @@ $(document).ready(function() {
       $("#button1").hide();
       $("form#form2").show();
       $("form#form1").hide();
-
       $("form#form2").submit(function() {
         var secondAnswer = $("#secondAnswer").val();
         $("#button2").hide();
@@ -18,13 +17,11 @@ $(document).ready(function() {
         $("form#form2").hide();
         $("form#form3").submit(function() {
           var thirdAnswer = $("#thirdAnswer").val();
-
           $("#button3").hide();
           $("form#form4").show();
           $("form#form3").hide();
           $("form#form4").submit(function() {
             var fourthAnswer = $("#fourthAnswer").val();
-
             $("#button4").hide();
             $("form#form5").show();
             $("form#form4").hide();
@@ -32,7 +29,6 @@ $(document).ready(function() {
               var fifthAnswer = $("#fifthAnswer").val();
               $("#button5").hide();
               $("form#form5").hide();
-
 
               //Conditional statements.  It will take every possible input and give user a different response
               //In the class selection .oR stands for otherRecommendation. .fR stands for firstRecommendation.
@@ -53,10 +49,17 @@ $(document).ready(function() {
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
-                  } else if (thirdAnswer === "I want to learn something new!") {
+                  } else if (thirdAnswer === "I want to learn something new!" && fourthAnswer === "Easy to Learn" || fourthAnswer === "Not Hard but easier") {
                     $(".fR").text("Ruby on Rails");
                     $(".reason").text("It is a newer programming language that is gaining popularity");
                     $(".oR").text("CSS, HTML, JavaScript");
+                    $(".user").text(name);
+                    $(".address").text(address);
+                    $(".text").show();
+                  } else if (fourthAnswer === "Hard to Learn" || fourthAnswer === "Very Hard to Learn") {
+                    $(".fR").text("JavaScript, HTML, CSS");
+                    $(".reason").text("Altogther they are not easy to Learn");
+                    $(".oR").text("Java");
                     $(".user").text(name);
                     $(".address").text(address);
                     $(".text").show();
@@ -85,9 +88,7 @@ $(document).ready(function() {
                     $(".address").text(address);
                     $(".text").show();
                   }
-
                 }
-
               } else {
                 $(".noInput").show();
               }
