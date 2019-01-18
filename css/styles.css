@@ -1,5 +1,7 @@
 
-
+#form1 {
+  display: none;
+}
 
 #form2 {
   display: none;
@@ -14,5 +16,14 @@
 }
 
 #form5 {
+  display: none;
+}
+
+
+.text {
+  display: none;
+}
+
+.noInput {
   display: none;
 }
